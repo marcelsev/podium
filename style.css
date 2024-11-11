@@ -1,0 +1,138 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: rgb(252, 252, 252);
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 2px 0px rgba(206, 202, 199, 0.24);
+  font-weight: bolder;
+  font-size: 3em;
+}
+.place {
+  text-align: center;
+}
+i {
+  font-size: 1.6em;
+}
+.podium {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  gap: 20px;
+  margin-top: 50px;
+}
+.position {
+  width: 250px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 10px;
+  text-align: center;
+  color: rgb(244, 241, 241);
+  font-size: 1.5em;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.position h3 {
+  white-space: normal;
+  word-wrap: break-word;
+}
+.position:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+.rank {
+  font-size: 2em;
+  font-weight: bold;
+}
+.first {
+  height: 260px;
+  background-color: rgb(247, 210, 0);
+}
+.second {
+  height: 220px;
+  background-color: rgb(182, 182, 182);
+}
+.third {
+  height: 190px;
+  background-color: rgba(194, 85, 17, 0.644);
+}
+.podium {
+  order: 0;
+}
+.second {
+  order: 1;
+}
+.first {
+  order: 2;
+}
+.third {
+  order: 3;
+}
+
+@media (max-width: 768px) {
+  .podium {
+    flex-direction: column;
+    align-items: start;
+    padding-left: 10px;
+  }
+
+  .position {
+    width: 90%;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+
+  .first {
+    order: 1;
+    height: 180px;
+  }
+
+  .second {
+    width: 80%;
+    order: 2;
+    height: 160px;
+  }
+
+  .third {
+    width: 70%;
+    order: 3;
+    height: 140px;
+  }
+
+  .rank {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .position {
+    width: 90%;
+  }
+  .first {
+    order: 1;
+    height: 180px;
+  }
+
+  .second {
+    width: 80%;
+    order: 2;
+    height: 160px;
+  }
+
+  .third {
+    width: 70%;
+    order: 3;
+    height: 140px;
+  }
+  .rank {
+    font-size: 1.2em;
+  }
+}
